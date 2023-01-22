@@ -1,0 +1,21 @@
+{
+  "name": "tfc-surv-discord",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist",
+    "dev": "tsc -w"
+  },
+  "keywords": [],
+  "author": "koenigstag",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
