@@ -8,6 +8,10 @@
     "start": "nodemon ./dist",
     "dev": "tsc -w"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koenigstag/tfcsurv-discord-bot.git"
+  },
   "keywords": [],
   "author": "koenigstag",
   "license": "ISC",
