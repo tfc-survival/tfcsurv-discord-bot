@@ -102,6 +102,7 @@ export default {
             isYoutubeResource = isLink && source.includes('youtube.com');
 
             console.log('Source', source);
+            console.log('Is link:', isLink, '; Is mp3:', isMP3File, '; Is youtube:', isYoutubeResource);
 
             if (isLink) {
                 if (isYoutubeResource) {
@@ -115,6 +116,7 @@ export default {
                 }
             } else {
                 const fileURI = `${DEFAULT_RESOURCE_LOCATION}/${source}.mp3`;
+                console.log('File path', fileURI);
                 await stat(fileURI);
                 resource = createAudioResource(fileURI);
             }
