@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./dist",
+    "start": "node ./dist",
+    "start:dev": "nodemon ./dist",
     "dev": "tsc -w"
   },
   "repository": {
@@ -24,5 +25,11 @@
     "dotenv": "^16.0.3",
     "isomorphic-fetch": "^3.0.0",
     "nodemon": "^2.0.20"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "dist/"
+    ],
+    "ext": "js,json"
   }
 }
