@@ -75,9 +75,7 @@ export default {
         return;
       }
 
-      const avatarUrl = user?.user.avatarURL({
-        forceStatic: true,
-      });
+      const avatarUrl = user?.user.avatarURL();
 
       const webhook = await (channel as TextChannel)?.createWebhook({
         name: user?.displayName as string,

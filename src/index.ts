@@ -18,6 +18,6 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
 
     console.log('[INIT] Successfully reloaded application (/) commands.');
   } catch (error) {
-    console.error(error);
+    console.error('[INIT]', error);
   }
 })();
