@@ -75,7 +75,7 @@ export default {
         return;
       }
 
-      const avatarUrl = user?.user.avatarURL();
+      const avatarUrl = user?.user.displayAvatarURL();
 
       const webhook = await (channel as TextChannel)?.createWebhook({
         name: user?.displayName as string,
@@ -89,6 +89,7 @@ export default {
         body: JSON.stringify({
           content: args.value as string,
           avatarUrl,
+          avatar_url: avatarUrl,
         }),
       });
 
